@@ -1,4 +1,4 @@
-# Plantilla base para React JS
+# Parzival Dashboard base
 
 ## Instalación
 
