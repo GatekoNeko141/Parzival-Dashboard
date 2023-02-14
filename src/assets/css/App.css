@@ -30,6 +30,10 @@
 .t-left{text-align: left;}
 .t-right{text-align: right;}
 
+.no-scroll{overflow: hidden;}
+.y-scroll{overflow-x: hidden;}
+.x-scroll{overflow-y: hidden;}
+
 .align-l-t {/*IZQUIERDA => ARRIBA*/
   justify-content: flex-start;
   align-items: flex-start;
