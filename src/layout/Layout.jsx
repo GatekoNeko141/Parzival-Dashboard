@@ -1,8 +1,9 @@
 import { useState } from 'react'
+import { Hamburger } from '../components'
 import style from '../assets/css/Layout.module.css'
 
 const Layout = ({children}) => {
-  const [barExpanded] = useState(true)
+  const [barExpanded, setBarExpanded] = useState(true)
 
   const LayoutHTML = (<>
     <div className={`no-scroll d-flex w-100 vh-100`}>
@@ -11,7 +12,11 @@ const Layout = ({children}) => {
         <div className={`${style.navContainer} maq`}></div>
       </div>
       <div className={`${style.dashboardContainer}`}>
-        <div className={`${style.headerContainer} maq`}></div>
+        <div className={`${style.headerContainer}`}>
+          <div className="pt-2">
+            <Hamburger barExpanded={barExpanded} setBarExpanded={setBarExpanded}/>
+          </div>
+        </div>
         <div className={`${style.contentDynamic} maq`}>
           {children}
         </div>

@@ -10,7 +10,7 @@ import { Page } from './pages'
 import './assets/css/App.css'
 
 function App() {
-  let AppPage = (
+  const AppPage = (
     <Router>
       <Routes>
         <Route path='/' element={<Layout><Page/></Layout>}></Route>

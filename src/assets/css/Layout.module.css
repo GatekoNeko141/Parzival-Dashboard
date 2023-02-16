@@ -10,9 +10,10 @@
   transition: .5s all ease;
   background-color: var(--blue);
   overflow: hidden;
+  flex: none;
 }
-.sideBarExpanded{width: var(--widhtSideBarExpanded) !important;}
-.sideBarExpanded ~ .dashboardContainer{width: calc(100% - var(--widhtSideBarContracted)) !important;}
+.sideBarExpanded{width: var(--widhtSideBarExpanded);}
+.sideBarExpanded ~ .dashboardContainer{width: calc(100% - var(--widhtSideBarContracted));}
 .logoContainer{
   width: 100%;
   height: var(--heightLogoContainer);
@@ -29,8 +30,17 @@
 .headerContainer{
   width: 100%;
   height: var(--heightHeaderContainer);
+  background-color: var(--blue);
 }
 .contentDynamic{
   width: 100%;
   height: calc(100% - var(--heightHeaderContainer));
+}
+@media (max-width: 576px) {
+  .sideBar{
+    width: 100% !important;
+    position: fixed;
+  }
+  .sideBarExpanded{width: 0% !important;}
+  .dashboardContainer, .dashboardContainer{width: 100% !important;}
 }
