@@ -1,4 +1,4 @@
-import style from "../assets/css/Hamburguer.module.css"
+import style from "../assets/css/components/Hamburguer.module.css"
 const Hamburguer = ({open, barExpanded, setBarExpanded}) => {
   const handleInput = flag => {
     setBarExpanded(flag)

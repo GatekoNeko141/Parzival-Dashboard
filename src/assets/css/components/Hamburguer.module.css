@@ -4,7 +4,8 @@
   height: 30px;
   background: transparent;
   cursor: pointer;
-  transform: scale(.8);
+  transform: scale(.6);
+  opacity: .8;
 }
 .burger input {display: none;}
 .burger span {

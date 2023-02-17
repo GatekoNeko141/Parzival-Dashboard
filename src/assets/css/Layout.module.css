@@ -21,6 +21,8 @@
 .navContainer{
   width: 100%;
   height: calc(100% - var(--heightLogoContainer));
+  overflow-x: hidden;
+  padding: 0px 3px;
 }
 .dashboardContainer{
   width: calc(100% - var(--widhtSideBarContracted));

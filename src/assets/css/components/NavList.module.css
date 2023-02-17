@@ -1,0 +1,20 @@
+.itemNav{
+  display: flex;
+  align-items: center;
+  color: rgb(255 255 255 / .8);
+  font-weight: 300;
+  padding: 6px 0px;
+  transition: .3s all ease;
+  border-radius: 5px;
+}
+.itemNav span{
+  font-size: 16px;
+  padding: 0px 14px;
+}
+.itemNav p{
+  margin: 4px 0px 0px 4px;
+  font-size: 15px;
+}
+.itemNav:hover{
+  background-color: rgb(255 255 255 / .3);
+}

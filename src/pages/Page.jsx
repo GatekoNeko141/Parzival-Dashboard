@@ -1,7 +1,7 @@
-import style from '../assets/css/Page.module.css'
+import style from '../assets/css/pages/Page.module.css'
 
 const Page = () => {
-  document.title = 'React Template - Page'
+  document.title = 'Parzival Dashboard - Page'
 
   const PageHTML = (<>
     <div className={`${style.pageContainer}`}>
