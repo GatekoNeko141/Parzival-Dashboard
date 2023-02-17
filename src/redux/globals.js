@@ -3,14 +3,25 @@ import { createSlice } from '@reduxjs/toolkit'
 export const AuthSesion = createSlice({
   name: 'sesion',
   initialState: {
-    timeLogged: 0
+    objectTest: 0,
+    navList: [
+      {
+        title: 'Inicio',
+        tag: 'divisor'
+      },
+      {
+        title: 'Dashboard',
+        icon: 'home',
+        path: '/'
+      }
+    ]
   },
   reducers:{
-    SET_SESION: (state, action) => {
-      state.timeLogged = action.payload
+    SET_SOMETHING: (state, action) => {
+      state.objectTest = action.payload
     }
   }
 })
 
-export const { SET_SESION } = AuthSesion.actions
+export const { SET_SOMETHING } = AuthSesion.actions
 export default AuthSesion.reducer

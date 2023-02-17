@@ -18,3 +18,8 @@
 .itemNav:hover{
   background-color: rgb(255 255 255 / .3);
 }
+.divisor{padding: 0px 2px;}
+.divisor p{
+  color: rgb(255 255 255 / .8);
+  margin: 0px;
+}
