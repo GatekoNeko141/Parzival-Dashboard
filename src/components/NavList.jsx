@@ -7,9 +7,8 @@ const NavList = () => {
 
   const NavListHTML = (
     <div className="listNav">
-
       {
-        navList.map(navItem=>
+        navList.map(navItem =>
           navItem.tag === 'divisor' ?
           <div key={navItem.title} className={style.divisor}>
             <p>{navItem.title}</p>
@@ -22,9 +21,6 @@ const NavList = () => {
           </Link>
         )
       }
-
-
-
     </div>
   )
 

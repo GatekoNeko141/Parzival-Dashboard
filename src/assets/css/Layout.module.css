@@ -32,11 +32,27 @@
 .headerContainer{
   width: 100%;
   height: var(--heightHeaderContainer);
-  background-color: var(--blue);
+  background: linear-gradient(90deg, var(--blueDark) -30%, var(--blue) 16%);
+  box-shadow: 0px 2px 6px 0px rgb(0 0 0 / .5);
 }
 .contentDynamic{
   width: 100%;
   height: calc(100% - var(--heightHeaderContainer));
+}
+.themeDark{background-color: var(--blueDark);}
+.themeDark h1, .themeDark h2,
+.themeDark h3, .themeDark h4,
+.themeDark h5, .themeDark h6,
+.themeDark p, .themeDark span{
+  color: rgb(255 255 255 / .8);
+  font-weight: 100;
+}
+.themeLight h1, .light h2,
+.themeLight h3, .light h4,
+.themeLight h5, .light h6,
+.themeLight p, .light span{
+  color: rgb(0 0 0 / .8);
+  font-weight: 100;
 }
 @media (max-width: 576px) {
   .sideBar{
