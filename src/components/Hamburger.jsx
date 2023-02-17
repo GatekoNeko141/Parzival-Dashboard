@@ -1,12 +1,12 @@
 import style from "../assets/css/Hamburguer.module.css"
-const Hamburguer = ({barExpanded, setBarExpanded}) => {
+const Hamburguer = ({open, barExpanded, setBarExpanded}) => {
   const handleInput = flag => {
     setBarExpanded(flag)
   }
 
   const HamburguerHTML = (
     <label htmlFor="burger" className={style.burger}>
-      <input id="burger" type="checkbox" onChange={() => {handleInput(!barExpanded)}}/>
+      <input id="burger" type="checkbox" defaultChecked={open} onChange={() => {handleInput(!barExpanded)}}/>
       <span></span>
       <span></span>
       <span></span>

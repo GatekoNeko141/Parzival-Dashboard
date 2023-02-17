@@ -38,9 +38,9 @@
 }
 @media (max-width: 576px) {
   .sideBar{
-    width: 100% !important;
+    width: 0% !important;
     position: fixed;
   }
-  .sideBarExpanded{width: 0% !important;}
-  .dashboardContainer, .dashboardContainer{width: 100% !important;}
+  .sideBarExpanded{width: 100% !important;}
+  .dashboardContainer{width: 100% !important;}
 }

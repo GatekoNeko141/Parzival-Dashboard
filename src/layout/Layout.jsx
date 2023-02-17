@@ -14,7 +14,7 @@ const Layout = ({children}) => {
       <div className={`${style.dashboardContainer}`}>
         <div className={`${style.headerContainer}`}>
           <div className="pt-2">
-            <Hamburger barExpanded={barExpanded} setBarExpanded={setBarExpanded}/>
+            <Hamburger open={true} barExpanded={barExpanded} setBarExpanded={setBarExpanded}/>
           </div>
         </div>
         <div className={`${style.contentDynamic} maq`}>
