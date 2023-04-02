@@ -7,6 +7,9 @@ import { BrowserRouter as Router,
 import Layout from './layout/Layout'
 import { Page } from './pages'
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min'
+
 function App() {
   const AppPage = (
     <Router>

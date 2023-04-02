@@ -4,7 +4,7 @@ import style from '../assets/css/Layout.module.css'
 
 const Layout = ({children}) => {
   const [barExpanded, setBarExpanded] = useState(true)
-  const [handleTheme, setHandleTheme] = useState(false)
+  const [handleTheme] = useState(false)
 
   const LayoutHTML = (<>
     <div className={`no-scroll d-flex w-100 vh-100`}>
