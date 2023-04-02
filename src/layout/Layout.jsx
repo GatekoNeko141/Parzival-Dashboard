@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Hamburger, NavList } from '../components'
+import { Hamburger, SwitchTheme, NavList } from '../components'
 import style from '../assets/css/Layout.module.css'
 
 const Layout = ({children}) => {
@@ -18,6 +18,10 @@ const Layout = ({children}) => {
         <div className={`${style.headerContainer}`}>
           <div className="pt-2">
             <Hamburger open={true} barExpanded={barExpanded} setBarExpanded={setBarExpanded}/>
+          </div>
+
+          <div className="pt-2">
+            <SwitchTheme/>
           </div>
         </div>
         <div className={`${style.contentDynamic} ${(handleTheme ? style.themeDark : style.themeLight)}`}>

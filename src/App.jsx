@@ -7,8 +7,6 @@ import { BrowserRouter as Router,
 import Layout from './layout/Layout'
 import { Page } from './pages'
 
-import './assets/css/App.css'
-
 function App() {
   const AppPage = (
     <Router>
